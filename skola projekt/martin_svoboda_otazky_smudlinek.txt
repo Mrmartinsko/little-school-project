@@ -1,0 +1,112 @@
+Autor: Martin Svoboda
+
+Otázka: Jaký je výsledek operace 7 // 4 v Pythonu a proč k tomuto výsledku dochází?
+1; 1, protože // provádí celočíselné dělení a odstraňuje desetinnou část.
+0; 1,75, protože provádí běžné dělení.
+0; 2, protože Python při celočíselném dělení zaokrouhluje nahoru.
+0; 0, protože operace vždy vrací nejbližší celé číslo menší než výsledek.
+
+
+Otázka: Které z následujících názvů proměnných jsou podle pravidel Pythonu platné?
+1; moje_promenna
+0; 2promenna
+0; moje-promenna
+0; @promenna
+
+
+Otázka: Pokud proměnné a přiřadíte hodnotu 5 a poté napíšete a = a + a, jaký bude konečný výsledek proměnné a?
+0; 5
+0; 10
+1; 20
+0; 25
+
+
+Otázka: Jaký je správný způsob vytvoření slovníku v Pythonu?
+0; my_dict = [key1:value1, key2:value2]
+0; my_dict = {key1=value1, key2=value2}
+1; my_dict = {'key1':'value1', 'key2':'value2'}
+0; my_dict = ('key1':'value1', 'key2':'value2')
+
+
+Otázka: Jak získáte hodnotu spojenou s klíčem 'key2' ve slovníku my_dict = {'key1':123,'key2':[12,23,33],'key3':['item0','item1','item2']}?
+0; my_dict.key2
+1; my_dict['key2']
+0; my_dict.get('key2')
+0; my_dict[2]
+
+
+Otázka: Co se stane, pokud použijete následující kód: my_dict['key1'] -= 123, kde my_dict = {'key1': 246, 'key2': 100}?
+0; Hodnota my_dict['key1'] bude 246.
+0; Hodnota my_dict['key1'] bude 369.
+1; Hodnota my_dict['key1'] bude 123.
+0; Operace způsobí chybu.
+
+
+Otázka: Jak získáte hodnotu 'value' z vnořeného slovníku d = {'key1':{'nestkey':{'subnestkey':'value'}}}?
+0; d['value']
+1; d['key1']['nestkey']['subnestkey']
+0; d['subnestkey']
+0; d['key1']['value']
+
+
+Otázka: Jakou metodou získáte seznam všech klíčů ze slovníku d = {'key1':1, 'key2':2, 'key3':3}?
+0; d.values()
+1; d.keys()
+0; d.items()
+0; d.get_keys()
+
+
+Otázka: Jak Python označuje začátek bloku kódu ve srovnání s jinými jazyky?
+1; Používá dvojtečku (:) a odsazení pro definování bloku kódu.
+0; Používá složené závorky ({}) pro bloky kódu.
+0; Používá závorky a středníky.
+0; Automaticky detekuje bloky kódu bez specifických znaků.
+
+
+Otázka: Co Python nepoužívá pro ukončení příkazů, na rozdíl od některých jiných jazyků, jako je C++?
+0; Dvojtečku (:).
+0; Závorky.
+0; Tečku.
+1; Středník (;).
+
+
+Otázka: Jak Python řeší strukturu vnořených podmínek ve srovnání s jinými jazyky?
+0; Používá závorky k oddělení každé úrovně vnoření.
+0; Používá dvojtečky pouze pro první úroveň vnoření.
+1; Využívá odsazení k označení vnořených úrovní kódu.
+0; Používá klíčová slova jako BEGIN a END.
+
+
+Otázka: Proč Python vyžaduje odsazení a čitelnost kódu?
+0; Aby mohl kompilátor ignorovat zbytečné mezery.
+0; Protože je to povinné pouze v rámci určitých knihoven.
+1; Protože čitelnost je klíčovým designovým prvkem jazyka Python.
+0; Aby nahradil nutnost použití jiných klíčových slov, jako je BEGIN a END.
+
+
+Otázka: Která z následujících možností správně popisuje, jak Python označuje blok kódu v podmínkách?
+0; Python používá závorky {} k označení bloku kódu v podmínkách.
+1; Python používá dvojtečku (:) a odsazení k označení bloku kódu.
+0; Python používá klíčová slova BEGIN a END k označení začátku a konce bloku kódu.
+0; Python blok kódu označuje pomocí speciálního ukončovacího znaku na konci každého řádku.
+
+
+Otázka: Co vrací funkce filter v Pythonu?
+0; Všechny hodnoty z iterovatelného objektu bez ohledu na podmínku.
+1; Pouze ty hodnoty z iterovatelného objektu, které splňují podmínku zadanou ve funkci.
+0; Indexy prvků, které splňují podmínku zadanou ve funkci.
+0; Změněný iterovatelný objekt s aplikovanou funkcí na každý prvek.
+
+
+Otázka: Jaký je hlavní rozdíl mezi funkcí definovanou pomocí def a lambda výrazem?
+0; Lambda výrazy mohou mít více návratových hodnot.
+0; Funkce definované pomocí def nemohou být předány do map nebo filter.
+1; Lambda výrazy mohou obsahovat pouze jediný výraz, zatímco funkce definované pomocí def mohou obsahovat více příkazů.
+0; Lambda výrazy mohou mít více argumentů než funkce definované pomocí def.
+
+
+Otázka: Která z následujících možností je příkladem správného použití lambda výrazu?
+0; lambda x, y: return x + y
+1; lambda x, y: x + y
+0; lambda x: {x**2}
+0; lambda x: x;

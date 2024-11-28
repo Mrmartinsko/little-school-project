@@ -137,18 +137,13 @@ def parse_questions(content, author, filename):
         list, seznam otázek ve formě slovníku.
     """
     questions = []
-    question_blocks = content.split("Otázka")
+    question_blocks = content.strip().split("\n\n\n")
     for block in question_blocks[1:]:  
-        parts = block.split("x")  
-        if len(parts) < 2:
-            continue
-        
-        question_text = parts[1].strip()  
-
-        options_text = parts[2].strip() if len(parts) > 2 else ""
-    
-        options = [option.strip() for option in options_text.split(";") if option.strip()]
-        
+        lines = block.strip().split("\n")  
+        if lines[0].startswith("Otázka:"):
+            question_text = lines[0][len("Otázka:"):].strip()
+            options = [line.strip() for line in lines[1:] if line.startswith("0", "1")]
+            
         questions_data = {
             'question': question_text,
             'options': options,
@@ -157,6 +152,64 @@ def parse_questions(content, author, filename):
              }
         questions.append(questions_data)
     return questions
+
+
+def shuffle_answers(questions):
+    """Zamíchá odpovědi u zadané otázky.    
+    Args:
+        question: dict, jedna otázka se správnou odpovědí.
+    Returns:
+        dict, otázka se zamíchanými odpověďmi.
+    """
+    for question in questions:
+        answers = [(answer[:2], answer[2:].strip()) for answer in question['answer']]
+        random.shuffle(answers)
+        question['answers'] = [f"{mark}{text}" for mark, text in answers]
+        question['correct answer'] = next(i for i, (mark, _) in enumerate(answers) if mark == "1;")
+    return questions
+
+def get_user_name():
+    """Získá jméno a příjmení zadané uživatelem."""
+    first_name = input("Zadejte své jméno: ")
+    last_name = input("Zadejte příjmení: ")
+    return first_name, last_name
+
+def get_number_of_questions(total_questions):
+    """Získá od uživatele počet otázek, které chce mít v testu.
+    Args:
+        total_questions: int, maximální počet dostupných otázek.
+    Returns:
+        int, počet otázek pro test.
+    """
+    while True:
+        try: 
+            number_of_questions = int(input(f"Zadejte počet otázek v rozmezí 1-{total_questions}"))
+            if 1 <= number_of_questions >= total_questions:
+                return number_of_questions
+            else: 
+                print("zadejte počet otázek znovu...")
+        except ValueError:
+            print("zadejte platné číslo")
+
+def ask_question(question, index):
+    print(f"Autor: {'author'} (zdroj): {'filename'}")
+    print(f"Otázka {index+1}: {question}")
+    for i, option in enumerate(question['answers']):
+        print(f"{i + 1}. {option[2:]}")
+
+    while True:
+        try:
+            user_input = int(input("\nVyberte číslo odpovědi: ")) - 1
+            if 0<= user_input >= len(question['answers']):
+                break
+            else: 
+                print("Zadejte číslo v platném rozsahu")
+        except ValueError:  
+            print("Zadejte celé číslo")
+
+    corrext_index = question['correct answer']
+    
+
 
 
 
