@@ -208,6 +208,17 @@ def ask_question(question, index):
             print("Zadejte celé číslo")
 
     corrext_index = question['correct answer']
+    is_correct = (user_input == corrext_index)
+    return is_correct
+
+def calculate_result(score, total_questions):
+    percentage = (score / total_questions) * 100
+    for key, (lower, upper) in MARKING.item():
+        if lower <= percentage > upper:
+            return key, percentage
+    return percentage
+
+
     
 
 
