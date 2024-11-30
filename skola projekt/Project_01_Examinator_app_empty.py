@@ -213,13 +213,43 @@ def ask_question(question, index):
 
 def calculate_result(score, total_questions):
     percentage = (score / total_questions) * 100
-    for key, (lower, upper) in MARKING.item():
+    for grade, (lower, upper) in MARKING.item():
         if lower <= percentage > upper:
-            return key, percentage
+            return grade, percentage
     return percentage
 
 
+def save_test_result(last_name, first_name, total_questions, grade, success_rate, wrong_answers):
+    os.makedirs(RESULT_FOLDER, exist_ok=True)
+    time = datetime.now().strftime("%Y%m%d_%H%M%S")
+    filename = f"{last_name}_{first_name}_{time}_{total_questions}_{grade}.txt"
+    whole_file = os.path.join(RESULT_FOLDER, filename)
+
+    lines = [
+        f"Vypracoval/a: {first_name} {last_name}",
+        f"Otázek v testu: {total_questions}",
+        f"Výsledná známka: {grade}",
+        f"Procentní úspěšnost: {success_rate:.2f} %",
+        f"Stupnice: {MARKING}",
+        f"Datum a čas vyhodnocení: {datetime.now().strftime('%d.%m.%Y, %H:%M:%S')}",
+    ]
+    if wrong_answers:
+        lines.append("\n----------------------\nChybně zodpovězeno:")
+        for question in wrong_answers:
+            lines.append(f"n\Otázka {question['questoin']}")
+            lines.extend(question['asnwers'])
+    with open(whole_file, "w", encoding='utf-8') as file:
+        file.write("\n" .join(lines))
+
+
+
+        
+
+
     
+    
+
+
 
 
 
