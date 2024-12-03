@@ -1,0 +1,14 @@
+Vypracoval/a: sS s
+Otázek v testu: 1
+Výsledná známka: 5
+Procentní úspěšnost: 0.00%
+Stupnice: {1: (90, 100), 2: (75, 90), 3: (60, 75), 4: (45, 60), 5: (0, 45)}
+Datum a čas vyhodnocení: 03.12.2024, 19:20:47
+
+----------------------
+Chybně zodpovězeno:
+n\Otázka Co vrací funkce filter v Pythonu?
+0;Změněný iterovatelný objekt s aplikovanou funkcí na každý prvek.
+1;Pouze ty hodnoty z iterovatelného objektu, které splňují podmínku zadanou ve funkci.
+0;Všechny hodnoty z iterovatelného objektu bez ohledu na podmínku.
+0;Indexy prvků, které splňují podmínku zadanou ve funkci.

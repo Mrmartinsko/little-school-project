@@ -1,0 +1,29 @@
+Vypracoval/a: martin svoboda
+Otázek v testu: 4
+Výsledná známka: 5
+Procentní úspěšnost: 0.00%
+Stupnice: {1: (90, 100), 2: (75, 90), 3: (60, 75), 4: (45, 60), 5: (0, 45)}
+Datum a čas vyhodnocení: 03.12.2024, 19:21:02
+
+----------------------
+Chybně zodpovězeno:
+n\Otázka Jaký je hlavní rozdíl mezi funkcí definovanou pomocí def a lambda výrazem?
+0;Lambda výrazy mohou mít více návratových hodnot.
+0;Lambda výrazy mohou mít více argumentů než funkce definované pomocí def.
+1;Lambda výrazy mohou obsahovat pouze jediný výraz, zatímco funkce definované pomocí def mohou obsahovat více příkazů.
+0;Funkce definované pomocí def nemohou být předány do map nebo filter.
+n\Otázka Která z následujících možností je příkladem správného použití lambda výrazu?
+0;lambda x: {x**2}
+0;lambda x: x;
+1;lambda x, y: x + y
+0;lambda x, y: return x + y
+n\Otázka Jak Python označuje začátek bloku kódu ve srovnání s jinými jazyky?
+0;Používá složené závorky ({}) pro bloky kódu.
+0;Používá závorky a středníky.
+0;Automaticky detekuje bloky kódu bez specifických znaků.
+1;Používá dvojtečku (:) a odsazení pro definování bloku kódu.
+n\Otázka Jakou metodou získáte seznam všech klíčů ze slovníku d = {'key1':1, 'key2':2, 'key3':3}?
+0;d.get_keys()
+0;d.values()
+1;d.keys()
+0;d.items()
