@@ -1,112 +1,106 @@
 Autor: Martin Svoboda
 
-Otázka: Jaký je výsledek operace 7 // 4 v Pythonu a proč k tomuto výsledku dochází?
-1; 1, protože // provádí celočíselné dělení a odstraňuje desetinnou část.
-0; 1,75, protože provádí běžné dělení.
-0; 2, protože Python při celočíselném dělení zaokrouhluje nahoru.
-0; 0, protože operace vždy vrací nejbližší celé číslo menší než výsledek.
+
+Otázka: Jak Python ukončuje příkazovou řádku?
+1; Python ukončuje příkazovou řádku na konci každého řádku kódu.
+0; Python vyžaduje použití středníku (;) na konci každé příkazové řádky.
+0; Python používá složené závorky {} k ukončení každého příkazu.
+0; Python ukončuje příkaz na základě počtu mezer na začátku řádky.
 
 
-Otázka: Které z následujících názvů proměnných jsou podle pravidel Pythonu platné?
-1; moje_promenna
-0; 2promenna
-0; moje-promenna
-0; @promenna
+Otázka: Co označuje konec hlavičky podmíněného bloku v Pythonu?
+1; Dvojtečka (:).
+0; Středník (;).
+0; Složené závorky ({}).
+0; Tečka (.).
 
 
-Otázka: Pokud proměnné a přiřadíte hodnotu 5 a poté napíšete a = a + a, jaký bude konečný výsledek proměnné a?
-0; 5
-0; 10
-1; 20
-0; 25
+Otázka: Jak Python definuje blok kódu, který patří k podmíněnému příkazu?
+1; Pomocí odsazení (whitespace).
+0; Pomocí složených závorek {}.
+0; Pomocí středníků na začátku každé řádky.
+0; Pomocí tečky na začátku každé řádky.
 
 
-Otázka: Jaký je správný způsob vytvoření slovníku v Pythonu?
-0; my_dict = [key1:value1, key2:value2]
-0; my_dict = {key1=value1, key2=value2}
-1; my_dict = {'key1':'value1', 'key2':'value2'}
-0; my_dict = ('key1':'value1', 'key2':'value2')
+Otázka: Proč Python nevyžaduje složené závorky pro bloky kódu?
+1; Používá odsazení k označení bloků kódu.
+0; Python automaticky předpokládá bloky na základě proměnných.
+0; Python podporuje pouze jednořádkové bloky kódu.
+0; Python ignoruje bloky kódu.
 
 
-Otázka: Jak získáte hodnotu spojenou s klíčem 'key2' ve slovníku my_dict = {'key1':123,'key2':[12,23,33],'key3':['item0','item1','item2']}?
-0; my_dict.key2
-1; my_dict['key2']
-0; my_dict.get('key2')
-0; my_dict[2]
+Otázka: Jaký je hlavní přínos používání odsazení a whitespace v Pythonu?
+1; Zvyšuje čitelnost kódu.
+0; Umožňuje rychlejší zpracování kódu interpretem.
+0; Umožňuje psát více příkazů na jednu řádku.
+0; Odstraňuje potřebu ladění kódu.
 
 
-Otázka: Co se stane, pokud použijete následující kód: my_dict['key1'] -= 123, kde my_dict = {'key1': 246, 'key2': 100}?
-0; Hodnota my_dict['key1'] bude 246.
-0; Hodnota my_dict['key1'] bude 369.
-1; Hodnota my_dict['key1'] bude 123.
-0; Operace způsobí chybu.
+Otázka: Jakým způsobem Python označuje příkazy, které patří do stejného bloku?
+1; Použitím stejných odsazení u všech řádek v bloku.
+0; Použitím závorek na začátku a konci bloku.
+0; Použitím středníků mezi příkazy.
+0; Použitím speciálních symbolů na konci každé řádky.
 
 
-Otázka: Jak získáte hodnotu 'value' z vnořeného slovníku d = {'key1':{'nestkey':{'subnestkey':'value'}}}?
-0; d['value']
-1; d['key1']['nestkey']['subnestkey']
-0; d['subnestkey']
-0; d['key1']['value']
+Otázka: Která vlastnost Pythonu byla navržena k zajištění lepší čitelnosti?
+1; Povinné odsazení a použití whitespace.
+0; Povinné používání závorek a středníků.
+0; Použití specifických symbolů pro každý typ příkazu.
+0; Striktní pravidla pojmenovávání proměnných.
 
 
-Otázka: Jakou metodou získáte seznam všech klíčů ze slovníku d = {'key1':1, 'key2':2, 'key3':3}?
-0; d.values()
-1; d.keys()
-0; d.items()
-0; d.get_keys()
+Otázka: Jak Python řeší hierarchii podmínek ve víceúrovňových příkazech?
+1; Hierarchie je určena odsazením jednotlivých úrovní kódu.
+0; Hierarchie je určena použitím středníků mezi úrovněmi.
+0; Hierarchie je určena použitím speciálních klíčových slov.
+0; Hierarchie není v Pythonu možná.
 
 
-Otázka: Jak Python označuje začátek bloku kódu ve srovnání s jinými jazyky?
-1; Používá dvojtečku (:) a odsazení pro definování bloku kódu.
-0; Používá složené závorky ({}) pro bloky kódu.
-0; Používá závorky a středníky.
-0; Automaticky detekuje bloky kódu bez specifických znaků.
+Otázka: Co jsou metody v Pythonu?
+1; Funkce, které jsou vestavěné do objektů.
+0; Speciální typ proměnných, které ukládají objekty.
+0; Samostatné funkce, které nejsou vázány na objekty.
+0; Klíčová slova pro deklaraci objektů.
 
 
-Otázka: Co Python nepoužívá pro ukončení příkazů, na rozdíl od některých jiných jazyků, jako je C++?
-0; Dvojtečku (:).
-0; Závorky.
-0; Tečku.
-1; Středník (;).
+Otázka: Jaký je obecný tvar volání metody na objektu?
+1; object.method(arg1, arg2, ...).
+0; method.object(arg1, arg2, ...).
+0; method(object, arg1, arg2, ...).
+0; object:method(arg1, arg2, ...).
 
 
-Otázka: Jak Python řeší strukturu vnořených podmínek ve srovnání s jinými jazyky?
-0; Používá závorky k oddělení každé úrovně vnoření.
-0; Používá dvojtečky pouze pro první úroveň vnoření.
-1; Využívá odsazení k označení vnořených úrovní kódu.
-0; Používá klíčová slova jako BEGIN a END.
+Otázka: Co je speciální argument 'self', který se používá u metod?
+1; Odkazuje na objekt samotný.
+0; Ukládá seznam argumentů metody.
+0; Označuje konec bloku metody.
+0; Je rezervovaný klíčový argument pro datové struktury.
 
 
-Otázka: Proč Python vyžaduje odsazení a čitelnost kódu?
-0; Aby mohl kompilátor ignorovat zbytečné mezery.
-0; Protože je to povinné pouze v rámci určitých knihoven.
-1; Protože čitelnost je klíčovým designovým prvkem jazyka Python.
-0; Aby nahradil nutnost použití jiných klíčových slov, jako je BEGIN a END.
+Otázka: Která metoda přidá nový prvek na konec seznamu?
+1; append().
+0; insert().
+0; extend().
+0; pop().
+ 
+
+Otázka: Co dělá metoda count() u seznamu?
+1; Počítá, kolikrát se určitý prvek v seznamu vyskytuje.
+0; Přidá nový prvek do seznamu.
+0; Odstraní prvek z dané pozice v seznamu.
+0; Obrátí pořadí prvků v seznamu.
 
 
-Otázka: Která z následujících možností správně popisuje, jak Python označuje blok kódu v podmínkách?
-0; Python používá závorky {} k označení bloku kódu v podmínkách.
-1; Python používá dvojtečku (:) a odsazení k označení bloku kódu.
-0; Python používá klíčová slova BEGIN a END k označení začátku a konce bloku kódu.
-0; Python blok kódu označuje pomocí speciálního ukončovacího znaku na konci každého řádku.
+Otázka: Jakým způsobem lze získat více informací o metodě v Pythonu?
+1; Použitím funkce help() nebo Shift+Tab v Jupyter Notebooku.
+0; Použitím funkce info().
+0; Použitím klíčového slova doc.
+0; Zavoláním metody bez závorek.
 
 
-Otázka: Co vrací funkce filter v Pythonu?
-0; Všechny hodnoty z iterovatelného objektu bez ohledu na podmínku.
-1; Pouze ty hodnoty z iterovatelného objektu, které splňují podmínku zadanou ve funkci.
-0; Indexy prvků, které splňují podmínku zadanou ve funkci.
-0; Změněný iterovatelný objekt s aplikovanou funkcí na každý prvek.
-
-
-Otázka: Jaký je hlavní rozdíl mezi funkcí definovanou pomocí def a lambda výrazem?
-0; Lambda výrazy mohou mít více návratových hodnot.
-0; Funkce definované pomocí def nemohou být předány do map nebo filter.
-1; Lambda výrazy mohou obsahovat pouze jediný výraz, zatímco funkce definované pomocí def mohou obsahovat více příkazů.
-0; Lambda výrazy mohou mít více argumentů než funkce definované pomocí def.
-
-
-Otázka: Která z následujících možností je příkladem správného použití lambda výrazu?
-0; lambda x, y: return x + y
-1; lambda x, y: x + y
-0; lambda x: {x**2}
-0; lambda x: x;
+Otázka: Které z následujících metod patří k objektu typu seznam?
+1; remove, sort, reverse.
+0; split, join, replace.
+0; open, close, read.
+0; update, get, popitem.
