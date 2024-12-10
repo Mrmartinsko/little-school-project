@@ -1,0 +1,106 @@
+Autor: Martin Svoboda
+
+
+Otázka: Jak Python ukončuje příkazovou řádku?
+1; Python ukončuje příkazovou řádku na konci každého řádku kódu.
+0; Python vyžaduje použití středníku (;) na konci každé příkazové řádky.
+0; Python používá složené závorky {} k ukončení každého příkazu.
+0; Python ukončuje příkaz na základě počtu mezer na začátku řádky.
+
+
+Otázka: Co označuje konec hlavičky podmíněného bloku v Pythonu?
+1; Dvojtečka (:).
+0; Středník (;).
+0; Složené závorky ({}).
+0; Tečka (.).
+
+
+Otázka: Jak Python definuje blok kódu, který patří k podmíněnému příkazu?
+1; Pomocí odsazení (whitespace).
+0; Pomocí složených závorek {}.
+0; Pomocí středníků na začátku každé řádky.
+0; Pomocí tečky na začátku každé řádky.
+
+
+Otázka: Proč Python nevyžaduje složené závorky pro bloky kódu?
+1; Používá odsazení k označení bloků kódu.
+0; Python automaticky předpokládá bloky na základě proměnných.
+0; Python podporuje pouze jednořádkové bloky kódu.
+0; Python ignoruje bloky kódu.
+
+
+Otázka: Jaký je hlavní přínos používání odsazení a whitespace v Pythonu?
+1; Zvyšuje čitelnost kódu.
+0; Umožňuje rychlejší zpracování kódu interpretem.
+0; Umožňuje psát více příkazů na jednu řádku.
+0; Odstraňuje potřebu ladění kódu.
+
+
+Otázka: Jakým způsobem Python označuje příkazy, které patří do stejného bloku?
+1; Použitím stejných odsazení u všech řádek v bloku.
+0; Použitím závorek na začátku a konci bloku.
+0; Použitím středníků mezi příkazy.
+0; Použitím speciálních symbolů na konci každé řádky.
+
+
+Otázka: Která vlastnost Pythonu byla navržena k zajištění lepší čitelnosti?
+1; Povinné odsazení a použití whitespace.
+0; Povinné používání závorek a středníků.
+0; Použití specifických symbolů pro každý typ příkazu.
+0; Striktní pravidla pojmenovávání proměnných.
+
+
+Otázka: Jak Python řeší hierarchii podmínek ve víceúrovňových příkazech?
+1; Hierarchie je určena odsazením jednotlivých úrovní kódu.
+0; Hierarchie je určena použitím středníků mezi úrovněmi.
+0; Hierarchie je určena použitím speciálních klíčových slov.
+0; Hierarchie není v Pythonu možná.
+
+
+Otázka: Co jsou metody v Pythonu?
+1; Funkce, které jsou vestavěné do objektů.
+0; Speciální typ proměnných, které ukládají objekty.
+0; Samostatné funkce, které nejsou vázány na objekty.
+0; Klíčová slova pro deklaraci objektů.
+
+
+Otázka: Jaký je obecný tvar volání metody na objektu?
+1; object.method(arg1, arg2, ...).
+0; method.object(arg1, arg2, ...).
+0; method(object, arg1, arg2, ...).
+0; object:method(arg1, arg2, ...).
+
+
+Otázka: Co je speciální argument 'self', který se používá u metod?
+1; Odkazuje na objekt samotný.
+0; Ukládá seznam argumentů metody.
+0; Označuje konec bloku metody.
+0; Je rezervovaný klíčový argument pro datové struktury.
+
+
+Otázka: Která metoda přidá nový prvek na konec seznamu?
+1; append().
+0; insert().
+0; extend().
+0; pop().
+ 
+
+Otázka: Co dělá metoda count() u seznamu?
+1; Počítá, kolikrát se určitý prvek v seznamu vyskytuje.
+0; Přidá nový prvek do seznamu.
+0; Odstraní prvek z dané pozice v seznamu.
+0; Obrátí pořadí prvků v seznamu.
+
+
+Otázka: Jakým způsobem lze získat více informací o metodě v Pythonu?
+1; Použitím funkce help() nebo Shift+Tab v Jupyter Notebooku.
+0; Použitím funkce info().
+0; Použitím klíčového slova doc.
+0; Zavoláním metody bez závorek.
+
+
+Otázka: Které z následujících metod patří k objektu typu seznam?
+1; remove, sort, reverse.
+0; split, join, replace.
+0; open, close, read.
+0; update, get, popitem.
